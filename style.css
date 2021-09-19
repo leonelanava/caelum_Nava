@@ -291,17 +291,45 @@ grid-template-areas:
 
 footer {
     margin-top: 20vh;
-    /* margin-left: 3vw; */
-    /* margin-right: 3vw; */
     background-color: rgba(221, 205, 186, 0.801);
     padding: 20px;
     grid-area: footer;
+}
+
+footer p {
+    font-size: small;
 }
 
 footer h4 {
     margin-bottom: 1rem;
 }
 
+footer a {
+    font-size: medium;
+    text-decoration: none;
+    color: black;
+}
+
+footer ul li {
+    list-style: none;
+    display: block;
+}
+
+.btn-footer {
+    color: black;
+ 
+   text-decoration: none;
+   border: 1px solid;
+   border-radius: 43px;
+   font-size: 13px;
+   padding: 7px 30px;
+   line-height: 47px;
+}
+.btn-footer:hover {
+   
+   text-decoration: none;
+  
+}
 
 .footerGrid {
     display: flex;
