@@ -27,6 +27,23 @@ select {
 }
 
 
+/* MEDIA QUERIES - GENERAL */
+
+/* MEDIA QUERIES - Texto */
+@media only screen and (max-width: 600px)  {
+p {
+font-size: 1.5em;
+}
+h2 {
+    font-size: 3rem;
+}
+}
+
+
+
+/* MEDIA QUERIES - INDEX */
+
+@media only screen and (min-width: 601px) {
 .bodyindex {
 background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/imagenfondo.jpg);
  background-size: cover;
@@ -41,6 +58,29 @@ grid-template-areas:
 "footer"
 ;
 }
+}
+
+/* PANTALLA CELULAR */
+@media only screen and (max-width: 600px)  {
+.bodyindex {
+background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/imagenfondo.jpg);
+ background-size: cover;
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ display: grid;
+ grid-template-rows: 10% 40% 20% 20% 10%;
+ row-gap: 2%;
+ grid-template-areas: 
+ "header"
+ "main"
+ "servicios"
+ "reseñas"
+ "footer";
+}
+}
+
+
 
 .header {
     font-weight: bold;
@@ -77,8 +117,10 @@ grid-template-areas:
 
 /* SECCIÓN PRINCIPAL AL ENTRAR AL SITIO WEB*/
 
+
 .seccionPrincipal {
-    margin-left: 20px;
+    margin-left: 5vw;
+    margin-top: 5vh;
     background-color:rgba(221, 205, 186, 0.801);
     grid-area: main;
     display: grid;
@@ -105,7 +147,6 @@ grid-template-areas:
 .seccionPrincipal p {
     grid-area: disfruta;
     margin-left: 10vh;
-    font-size: 1rem;
 }
 
 .seccionPrincipal button {
@@ -137,6 +178,30 @@ grid-template-areas:
     text-align: center;
 }
 
+
+/* MEDIA QUERIES SERVICIOS  */
+
+/* PANTALLA CELULAR */
+
+@media only screen and (max-width: 600px) {
+.nuestrosServicios {
+    grid-area: servicios;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-areas:
+    "tituloPrincipal tituloPrincipal"
+    "masajesHome limpiezaFacialHome"
+    "saunaHome hidroterapiaHome";
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+}
+
+
+
+@media only screen and (min-width: 601px) {
 .nuestrosServicios {
     grid-area: servicios;
     display: grid;
@@ -148,7 +213,7 @@ grid-template-areas:
     justify-items: center;
     align-items: center;
     text-align: center;
- 
+}
 }
 
 .servicios {
