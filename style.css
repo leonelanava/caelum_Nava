@@ -26,6 +26,9 @@ select {
     font-family: 'Montserrat', sans-serif;
 }
 
+h2 {
+    font-weight: bold;
+}
 
 .bodyindex {
 background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/imagenfondo.jpg);
@@ -52,13 +55,13 @@ grid-template-areas:
 
 
 /* MENU DE NAVEGACIÓN */
-/* EJEMPLO DE USO DE FLEX */
 
 .header .menuPrincipal ul {
     display: flex;
     text-align: center;
     list-style-type: none;
-    margin-left: 20vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
     margin-top: 20vh;
 }
 
@@ -78,7 +81,6 @@ grid-template-areas:
 /* SECCIÓN PRINCIPAL AL ENTRAR AL SITIO WEB*/
 
 .seccionPrincipal {
-    margin-left: 20px;
     background-color:rgba(221, 205, 186, 0.801);
     grid-area: main;
     display: grid;
@@ -122,12 +124,13 @@ grid-template-areas:
     height: 8vh;
 }
 
-.seccionPrincipal a {
+.linkPrincipal {
     text-decoration: none;
     color: black;
     font-weight: bold;
     margin: 1vh;
-    line-height: 1vh
+    line-height: 1vh;
+    font-size: small; 
 }
 
 
@@ -159,6 +162,8 @@ grid-template-areas:
 .nuestrosServicios a {
     text-decoration: none;
     color: black;
+    font-size: large;
+    font-weight: bold;
 }
 
 
@@ -185,6 +190,7 @@ grid-template-areas:
 
 .nuestrosServicios .limpiezaFacialHome {
     grid-area: limpiezaFacialHome;
+    margin-right: 5vw;
     transition: all 1s;
 }
 
@@ -236,7 +242,6 @@ grid-template-areas:
 /* SECCIÓN DE RESEÑAS DENTRO DEL HOME*/
 
 .reseñas {
-    margin-left: 20px;
     line-height: 50px;
     grid-area: reseñas;
     background-color: rgba(250, 250, 210, 0.603);
@@ -267,6 +272,7 @@ grid-template-areas:
     font-style: italic;
     font-size: 1rem;
     grid-area: textoReseña;
+
 }
 
 
@@ -281,9 +287,8 @@ grid-template-areas:
 
 footer {
     margin-top: 20vh;
-    margin-left: 3vw;
-    margin-right: 3vw;
-    margin-bottom: 5vh;
+    /* margin-left: 3vw; */
+    /* margin-right: 3vw; */
     background-color: rgba(221, 205, 186, 0.801);
     padding: 20px;
     grid-area: footer;
@@ -370,6 +375,7 @@ font-size: 1rem;
     ;
     grid-area: diferentes;
     column-gap: 5vw;
+    row-gap: 2vh;
     margin-bottom: 10vh;
 
 }
@@ -411,43 +417,7 @@ font-size: 1rem;
 
 /* OTRO DOCUMENTO HTML: SECCIÓN SERVICIOS*/
 
-.serviciosGrid {
-    display: grid;
-    margin: 30px;
-    grid-template-rows: 20vh 50vh 50vh 50vh 50vh 40vh;
-    grid-template-columns: 90vw;
-    grid-template-areas: 
-    "titulo"
-    "masajes"
-    "limpiezaFacial"
-    "sauna"
-    "hidroterapia"
-    "reserva";
-}
 
-.tituloGrande {
-    grid-area: titulo;
-}
-
-.masajes {
-    grid-area: masajes;
-}
-
-.limpiezaFacial {
-    grid-area: limpiezaFacial;
-}
-
-.sauna {
-    grid-area: sauna;
-}
-
-.hidroterapia {
-    grid-area: hidroterapia;
-}
-
-.reservar {
-    grid-area: reserva;
-}
 
 
 /* OTRO DOCUMENTO HTML: SECCIÓN MEMBRESÍAS*/
