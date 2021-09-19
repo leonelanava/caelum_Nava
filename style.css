@@ -47,9 +47,7 @@ grid-template-areas:
 
 .header {
     font-weight: bold;
-    display: flex;
     padding: 5vh;
-    flex-wrap: nowrap;
     grid-area: header;
 }
 
@@ -57,12 +55,9 @@ grid-template-areas:
 /* MENU DE NAVEGACIÓN */
 
 .header .menuPrincipal ul {
-    display: flex;
-    text-align: center;
-    list-style-type: none;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-top: 20vh;
+    margin-left: 5vw; 
+    margin-right: 5vw; 
+    margin-top: 10vh;
 }
 
 
@@ -78,6 +73,15 @@ grid-template-areas:
     color: black;
 }
 
+
+.menuPrincipal button {
+    background-color: rgba(221, 205, 186, 0.801);
+    color: black;
+}
+
+.menuPrincipal span {
+    color: black;
+}
 /* SECCIÓN PRINCIPAL AL ENTRAR AL SITIO WEB*/
 
 .seccionPrincipal {
