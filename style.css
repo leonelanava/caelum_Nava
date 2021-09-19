@@ -27,72 +27,304 @@ select {
 }
 
 
-/* MEDIA QUERIES - GENERAL */
+/* INDEX*/
 
-/* MEDIA QUERIES - Texto */
+/* MEDIA QUERIES - Pantalla Celular */
 @media only screen and (max-width: 600px)  {
-p {
-font-size: 1.5em;
-}
+
 h2 {
+    font-size: 4rem;
+}
+h3 {
     font-size: 3rem;
 }
+
+.bodyindexCaelum {
+    background-color: rgba(252, 252, 239, 0.904);
+     display: grid;
+     grid-template-rows: 45vh 100vh 150vh 30vh;
+     row-gap: 5vh;
+     grid-template-areas: 
+     "header"
+     "main"
+     "servicios"
+     "footer";
+    }
+
+/* SECCIÓN PRINCIPAL */
+ .seccionPrincipal {
+     margin-top: 10vh; 
+     background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/FotoPrincipalMasaje.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-area: main;
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 3fr 1fr;
+    grid-template-areas: 
+        "viveLaExperiencia"
+        "conoceMas";
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    } 
+.seccionPrincipal h2 {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: none;
+    grid-area: viveLaExperiencia;
+}
+.seccionPrincipal button {
+    width: 40vw;
+    height: 20vh;
+    grid-area: conoceMas;
+    transition: height 1s;
+    background-color: rgba(255, 255, 224, 0.808);
+}
+.seccionPrincipal button:hover {
+    height: 7%;
+}
+
+.seccionPrincipal a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 1vh;
+    line-height: 1vh;
+}
+.hideInCel {
+    display: none;
+}
+
+.reseñas {
+    display: none;
+}
+
+
+/* SECCIÓN SERVICIOS */
+
+
+.nuestrosServicios {
+    grid-area: servicios;
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 2vh;
+    grid-template-areas: 
+    "tituloPrincipal"
+    "masajesHomeCelular"
+    "limpiezaFacialHomeCelular"
+    "saunaHomeCelular"
+    "hidroterapiaHomeCelular";
+}
+
+.nuestrosServicios h3 {
+    grid-area: tituloPrincipal;
+    margin-bottom: 5vh;
+}
+
+.nuestrosServicios .divMasajes {
+    grid-area: masajesHomeCelular;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/MasajeFondoCel.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nuestrosServicios .divLimpiezaFacial {
+    grid-area: limpiezaFacialHomeCelular;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/facialFondoCel.jpg);
+    background-size: cover;
+}
+
+.nuestrosServicios .divSauna {
+    grid-area: saunaHomeCelular;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/saunaHomeCel.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nuestrosServicios .divHidroterapia {
+    grid-area: hidroterapiaHomeCelular;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/hidroterapiaFondoCel.jpg);
+    background-size: cover;
+}
+
+
+/* FOOTER */
+.footer {
+    grid-area: footer;
+    height: 100%;
+    width: 100%;
+}
+
+
 }
 
 
 
-/* MEDIA QUERIES - INDEX */
+/* MEDIA QUERIES - Pantalla Desktop */
+
+
 
 @media only screen and (min-width: 601px) {
-.bodyindex {
+.bodyindexCaelum {
 background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/imagenfondo.jpg);
  background-size: cover;
     display: grid;
-grid-template-rows: 40vh 50vh 50vh 50vh 50vh;
+grid-template-rows: 30vh 80vh 60vh 40vh;
+grid-template-columns: 100%;
 row-gap: 5vh;
 grid-template-areas: 
 "header"
 "main"
 "servicios"
-"reseñas"
 "footer"
 ;
 }
+
+.header {
+    font-weight: bold;
+    display: flex;
+    height:30vh;
+    width: 100%;
+    padding: 5vh;
+    flex-wrap: nowrap;
+    grid-area: header;
+    margin-bottom: 10vh;
 }
 
-/* PANTALLA CELULAR */
-@media only screen and (max-width: 600px)  {
-.bodyindex {
-background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/imagenfondo.jpg);
- background-size: cover;
- background-position: center center;
- background-repeat: no-repeat;
- background-attachment: fixed;
- display: grid;
- grid-template-rows: 10% 40% 20% 20% 10%;
- row-gap: 2%;
- grid-template-areas: 
- "header"
- "main"
- "servicios"
- "reseñas"
- "footer";
-}
+/* SECCIÓN PRINCIPAL */
+.seccionPrincipal {
+    margin-top: 5vh; 
+    grid-area: main;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/nuevoFondoHomeDesktop.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "viveLaExperiencia"
+    "disfruta"
+    "conoceMas";
 }
 
+.seccionPrincipal h2 {
+    grid-area: viveLaExperiencia;
+    justify-self: center;
+    align-self: center;
+    font-size: 3rem;
+    margin-top: 10vh;
+}
+
+.seccionPrincipal p {
+    grid-area: disfruta;
+    justify-self: center;
+    align-self: center;
+}
+
+.seccionPrincipal button {
+grid-area: conoceMas;
+width: 20vw;
+height: 10vh;
+justify-self: center;
+align-self: center;
+background-color: rgba(221, 205, 186, 0.801);
+transition: height 1s;
+}
+
+.seccionPrincipal button:hover {
+    height: 12vh;
+}
+
+.seccionPrincipal a {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+/* SERVICIOS DENTRO DE HOME */
+
+
+.nuestrosServicios {
+    grid-area: servicios;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 4fr;
+    grid-template-areas:
+    "tituloPrincipal tituloPrincipal tituloPrincipal tituloPrincipal"
+    "masajesHome limpiezaFacialHome saunaHome hidroterapiaHome";
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.nuestrosServicios .divMasajes {
+    grid-area: masajesHome;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/masaje.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+
+
+
+.nuestrosServicios .divLimpiezaFacial {
+    grid-area: limpiezaFacialHome;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/facialFondoCel.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.nuestrosServicios .divSauna {
+    grid-area: saunaHome;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/saunaHomeDesktop.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.nuestrosServicios .divHidroterapia {
+    grid-area: hidroterapiaHome;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/hidroterapiaFondoCel.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+
+}
+
+/* TERMINA MEDIA QUERIES - DESKTOP */
 
 
 .header {
     font-weight: bold;
     display: flex;
+    height:40vh;
+    width: 100%;
     padding: 5vh;
     flex-wrap: nowrap;
     grid-area: header;
 }
 
 
+
 /* MENU DE NAVEGACIÓN */
-/* EJEMPLO DE USO DE FLEX */
 
 .header .menuPrincipal ul {
     display: flex;
@@ -115,61 +347,6 @@ background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255
     color: black;
 }
 
-/* SECCIÓN PRINCIPAL AL ENTRAR AL SITIO WEB*/
-
-
-.seccionPrincipal {
-    margin-left: 5vw;
-    margin-top: 5vh;
-    background-color:rgba(221, 205, 186, 0.801);
-    grid-area: main;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "imgPrincipal viveLaExperiencia"
-    "imgPrincipal disfruta"
-    "imgPrincipal conoceMas";
-}
-
-.seccionPrincipal img {
-    grid-area: imgPrincipal;
-    align-self: stretch;
-    justify-self: stretch;
-}
-
-.seccionPrincipal h2 {
-    grid-area: viveLaExperiencia;
-    margin-top: 5vh;
-    margin-left: 10vh;
-}
-
-.seccionPrincipal p {
-    grid-area: disfruta;
-    margin-left: 10vh;
-}
-
-.seccionPrincipal button {
-    grid-area: conoceMas;
-    background-color: lightgoldenrodyellow;
-    font-family: 'Montserrat', sans-serif;
-    width: 20vh;
-    height: 5vh;
-    margin-left: 15vh;
-    transition: height 1s;
-}
-
-.seccionPrincipal button:hover {
-    height: 8vh;
-}
-
-.seccionPrincipal a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    margin: 1vh;
-    line-height: 1vh
-}
 
 
 /* SECCIÓN DE SERVICIOS DENTRO DEL HOME*/
@@ -178,43 +355,6 @@ background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255
     text-align: center;
 }
 
-
-/* MEDIA QUERIES SERVICIOS  */
-
-/* PANTALLA CELULAR */
-
-@media only screen and (max-width: 600px) {
-.nuestrosServicios {
-    grid-area: servicios;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr 2fr;
-    grid-template-areas:
-    "tituloPrincipal tituloPrincipal"
-    "masajesHome limpiezaFacialHome"
-    "saunaHome hidroterapiaHome";
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-}
-}
-
-
-
-@media only screen and (min-width: 601px) {
-.nuestrosServicios {
-    grid-area: servicios;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 2fr;
-    grid-template-areas:
-    "tituloPrincipal tituloPrincipal tituloPrincipal tituloPrincipal"
-    "masajesHome limpiezaFacialHome saunaHome hidroterapiaHome";
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-}
-}
 
 .servicios {
     font-weight: bold;
@@ -293,53 +433,11 @@ background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255
     padding: 2vh;
 }
 
-.nuestrosServicios h2 {
+.nuestrosServicios h3 {
     transform: scale(2,2);
 }
 
 
-/* SECCIÓN DE RESEÑAS DENTRO DEL HOME*/
-
-.reseñas {
-    margin-left: 20px;
-    line-height: 50px;
-    grid-area: reseñas;
-    background-color: rgba(250, 250, 210, 0.603);
-    display: grid;
-    row-gap: 2vh;
-    column-gap: 5vh;
-    grid-template-areas: 
-    "tituloReseña tituloReseña"
-    "imgReseña subtituloReseña"
-    "imgReseña textoReseña"
-    ;
-}
-
-.reseñas h2 {
-    font-style: italic;
-    grid-area: tituloReseña;
-    font-size: 150%;
-    padding: 2vh;
-    margin-left: 5vw;
-    margin-top: 3vh;
-}
-
-.reseñas h3 {
-    grid-area: subtituloReseña;
-}
-
-.reseñas .reseñaTexto {
-    font-style: italic;
-    font-size: 1rem;
-    grid-area: textoReseña;
-}
-
-
-.reseñas img {
-   grid-area: imgReseña;
-   padding: 1vh;
-   margin-left: 2vw;
-}
 
 
 /* FOOTER*/
@@ -352,6 +450,8 @@ footer {
     background-color: rgba(221, 205, 186, 0.801);
     padding: 20px;
     grid-area: footer;
+    height: 30vh;
+    width: 100%;
 }
 
 footer h4 {
