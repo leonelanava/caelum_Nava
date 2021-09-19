@@ -42,12 +42,13 @@ h3 {
 .bodyindexCaelum {
     background-color: rgba(252, 252, 239, 0.904);
      display: grid;
-     grid-template-rows: 45vh 100vh 150vh 30vh;
+     grid-template-rows: 45vh 100vh 150vh 30vh 30vh;
      row-gap: 5vh;
      grid-template-areas: 
      "header"
      "main"
      "servicios"
+     "reserva"
      "footer";
     }
 
@@ -114,16 +115,20 @@ h3 {
     grid-template-rows: repeat(5, 1fr);
     row-gap: 2vh;
     grid-template-areas: 
-    "tituloPrincipal"
+    "tituloPrincipalServicios"
     "masajesHomeCelular"
     "limpiezaFacialHomeCelular"
     "saunaHomeCelular"
     "hidroterapiaHomeCelular";
 }
 
+.nuestrosServicios .fondoServiciosHome{
+    grid-area: tituloPrincipalServicios;
+    font-size: medium;
+}
+
 .nuestrosServicios h3 {
-    grid-area: tituloPrincipal;
-    margin-bottom: 5vh;
+      margin-bottom: 5vh;
 }
 
 .nuestrosServicios .divMasajes {
@@ -152,6 +157,25 @@ h3 {
     background-size: cover;
 }
 
+
+/* RESERVA */
+
+.reservaAhora {
+    grid-area: reserva;
+ margin: auto;
+}
+
+.reservaAhora button {
+    background-color: rgba(255, 255, 224, 0.808);
+}
+
+.reservaAhora a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5vh 5vw;
+}
 
 /* FOOTER */
 .footer {
@@ -263,6 +287,17 @@ transition: height 1s;
     justify-items: center;
     align-items: center;
     text-align: center;
+    width: 100%;
+}
+
+.nuestrosServicios .fondoServiciosHome {
+    grid-area: tituloPrincipal;
+    background-color: rgba(221, 205, 186, 0.801);
+    width: 100%;
+}
+
+.nuestrosServicios h3 {
+    font-size: medium;
 }
 
 .nuestrosServicios .divMasajes {
@@ -274,7 +309,17 @@ transition: height 1s;
     justify-content: center;
 }
 
+.nuestrosServicios .divMasajes:hover {
+    background-image: url(./MultimediaProy/masaje.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
 
+.nuestrosServicios .divMasajes:hover a {
+    color: white;
+}
 
 
 .nuestrosServicios .divLimpiezaFacial {
@@ -284,6 +329,19 @@ transition: height 1s;
     height: 100%;
     width: 100%;
     justify-content: center;
+}
+
+
+.nuestrosServicios .divLimpiezaFacial:hover {
+    background-image: url(./MultimediaProy/facialFondoCel.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.nuestrosServicios .divLimpiezaFacial:hover a {
+    color: white;
 }
 
 .nuestrosServicios .divSauna {
@@ -296,6 +354,20 @@ transition: height 1s;
     justify-content: center;
 }
 
+
+.nuestrosServicios .divSauna:hover {
+    background-image: url(./MultimediaProy/saunaHomeDesktop.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.nuestrosServicios .divSauna:hover a {
+    color:white;
+}
+
 .nuestrosServicios .divHidroterapia {
     grid-area: hidroterapiaHome;
     background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/hidroterapiaFondoCel.jpg);
@@ -306,6 +378,17 @@ transition: height 1s;
     justify-content: center;
 }
 
+.nuestrosServicios .divHidroterapia:hover {
+    background-image: url(./MultimediaProy/hidroterapiaFondoCel.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+.nuestrosServicios .divHidroterapia:hover a {
+color: white;
+}
 
 }
 
@@ -367,56 +450,9 @@ transition: height 1s;
 }
 
 
-.nuestrosServicios img {
-    width: 15vw;
-    height: 20vh;
-    margin-top: 2vh;
-}
 
 .nuestrosServicios .tituloPrincipal {
     grid-area: tituloPrincipal;
-}
-
-.nuestrosServicios .masajesHome {
-    grid-area: masajesHome;
-    transition: all 1s;
-    
-}
-
-.nuestrosServicios .masajesHome:hover {
-    background-color: rgba(146, 140, 140, 0.466);
-}
-
-
-.nuestrosServicios .limpiezaFacialHome {
-    grid-area: limpiezaFacialHome;
-    transition: all 1s;
-}
-
-.nuestrosServicios .limpiezaFacialHome:hover {
-    background-color: rgba(146, 140, 140, 0.466);
-}
-
-
-.nuestrosServicios .saunaHome {
-    grid-area: saunaHome;
-    transition: all 1s;
-}
-
-.nuestrosServicios .saunaHome:hover {
-    background-color:rgba(146, 140, 140, 0.466);
-
-}
-
-
-.nuestrosServicios .hidroterapiaHome {
-    grid-area: hidroterapiaHome;
-    transition: all 1s;
-}
-
-.nuestrosServicios .hidroterapiaHome:hover {
-   background-color: rgba(146, 140, 140, 0.466);
-
 }
 
 
@@ -444,7 +480,6 @@ transition: height 1s;
 
 footer {
     margin-top: 20vh;
-    margin-left: 3vw;
     margin-right: 3vw;
     margin-bottom: 5vh;
     background-color: rgba(221, 205, 186, 0.801);
