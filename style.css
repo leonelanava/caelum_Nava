@@ -11,10 +11,19 @@ body {
     background-size: cover;
 }
 
+
+/* HEADER */
+
 header {
     background-color: rgba(255, 255, 224, 0.5);
 }
 
+.logoCaelum {
+    width: 18vw;
+    height: 30vh;
+}
+
+/* SECCIÓN PRINCIPAL */
 .seccionPrincipal {
     background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/fondoFinalProyecto.png);
     background-size: cover;
@@ -24,10 +33,29 @@ header {
     height: 100%;
 }
 
+.textoSecPrincipal {
+    height: 100%;
+}
+
+.seccionPrincipal .btn {
+    background-color: rgba(255, 255, 224, 0.808);
+    transition: 350ms all;
+}
+
+.seccionPrincipal .btn:hover {
+ transform: scale(1,2); /* No me agarra */
+}
+
+
+/* SECCIÓN SERVICIOS */
 
 .seccionServicios col {
     width: 100%;
+    height: 100%;
 }
+
+
+/* TITULOS QUE DIVIDEN SECCIONES DENTRO DEL HOME */
 
 .tituloDivision {
     background-color: rgba(255, 255, 224, 0.808);
@@ -63,15 +91,62 @@ header {
         background-repeat: no-repeat;
 }
 
-
-.seccionReserva {
+.seccionServicios .p-5 {
     height: 100%;
 }
+
+/* SECCIÓN RESERVA */
 
 .seccionReserva .btn {
     background-color: rgba(255, 255, 224, 0.808);
 }
 
 .seccionReserva .card  {
-    background-color: rgba(255, 255, 224, 0.5);
+    background-color: transparent;
+    border: none
+
 }
+
+.cardReservas {
+    background-color: rgba(255, 251, 200, 0.5);
+}
+
+
+
+/* FOOTER */
+
+.footerCaelum{
+  background-color: rgba(211, 211, 211, 0.300);
+  color:black;
+  }
+  
+
+ .linksFooter li a{
+      color: black;
+        text-decoration:none;
+    }
+  
+    .linksFooter li a:hover{
+        color: black;
+        transition: color .2s;
+        color: rgb(245, 197, 6);
+      }
+
+  .about-company i {
+      font-size: 25px;
+  }
+.about-company a { 
+      color: black
+}
+
+.about-company a:hover { 
+      transition: color .2s;
+      color:rgb(245, 197, 6);
+    }
+  }
+
+  .locationFooter{
+    i{font-size: 18px;}
+  }
+
+  .copyright p {border-top:1px solid rgba(255,255,255,.1);}
