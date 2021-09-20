@@ -7,10 +7,12 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/imagenfondo.jpg);
+    background-size: cover;
 }
 
 header {
-    background-color: rgba(255, 255, 224, 0.808);;
+    background-color: rgba(255, 255, 224, 0.5);
 }
 
 .seccionPrincipal {
@@ -22,11 +24,12 @@ header {
     height: 100%;
 }
 
+
 .seccionServicios col {
     width: 100%;
 }
 
-.seccionServicios .tituloServicios {
+.tituloDivision {
     background-color: rgba(255, 255, 224, 0.808);
     width: 100%;
     height: 100%;
@@ -58,4 +61,17 @@ header {
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+}
+
+
+.seccionReserva {
+    height: 100%;
+}
+
+.seccionReserva .btn {
+    background-color: rgba(255, 255, 224, 0.808);
+}
+
+.seccionReserva .card  {
+    background-color: rgba(255, 255, 224, 0.5);
 }
