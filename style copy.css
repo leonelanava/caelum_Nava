@@ -1,0 +1,805 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+option {
+    font-family: 'Montserrat', sans-serif;
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+}
+
+select {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* INDEX*/
+
+/* MEDIA QUERIES - Pantalla Celular */
+@media only screen and (max-width: 600px)  {
+
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+
+.bodyindexCaelum {
+    background-color: rgba(252, 252, 239, 0.904);
+     display: grid;
+     grid-template-rows: 45vh 100vh 150vh 30vh 30vh;
+     row-gap: 5vh;
+     grid-template-areas: 
+     "header"
+     "main"
+     "servicios"
+     "reserva"
+     "footer";
+    }
+
+/* SECCIÓN PRINCIPAL */
+ .seccionPrincipal {
+     margin-top: 10vh; 
+     background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/FotoPrincipalMasaje.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-area: main;
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: 3fr 1fr;
+    grid-template-areas: 
+        "viveLaExperiencia"
+        "conoceMas";
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    } 
+.seccionPrincipal h2 {
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: none;
+    grid-area: viveLaExperiencia;
+}
+.seccionPrincipal button {
+    width: 40vw;
+    height: 20vh;
+    grid-area: conoceMas;
+    transition: height 1s;
+    background-color: rgba(255, 255, 224, 0.808);
+}
+.seccionPrincipal button:hover {
+    height: 7%;
+}
+
+.seccionPrincipal a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    margin: 1vh;
+    line-height: 1vh;
+}
+.hideInCel {
+    display: none;
+}
+
+.reseñas {
+    display: none;
+}
+
+
+/* SECCIÓN SERVICIOS */
+
+
+.nuestrosServicios {
+    grid-area: servicios;
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    row-gap: 2vh;
+    grid-template-areas: 
+    "tituloPrincipalServicios"
+    "masajesHomeCelular"
+    "limpiezaFacialHomeCelular"
+    "saunaHomeCelular"
+    "hidroterapiaHomeCelular";
+}
+
+.nuestrosServicios .fondoServiciosHome{
+    grid-area: tituloPrincipalServicios;
+    font-size: medium;
+}
+
+.nuestrosServicios h3 {
+      margin-bottom: 5vh;
+}
+
+.nuestrosServicios .divMasajes {
+    grid-area: masajesHomeCelular;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/MasajeFondoCel.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nuestrosServicios .divLimpiezaFacial {
+    grid-area: limpiezaFacialHomeCelular;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/facialFondoCel.jpg);
+    background-size: cover;
+}
+
+.nuestrosServicios .divSauna {
+    grid-area: saunaHomeCelular;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/saunaHomeCel.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nuestrosServicios .divHidroterapia {
+    grid-area: hidroterapiaHomeCelular;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/hidroterapiaFondoCel.jpg);
+    background-size: cover;
+}
+
+
+/* RESERVA */
+
+.reservaAhora {
+    grid-area: reserva;
+ margin: auto;
+}
+
+.reservaAhora button {
+    background-color: rgba(255, 255, 224, 0.808);
+}
+
+.reservaAhora a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5vh 5vw;
+}
+
+/* FOOTER */
+.footer {
+    grid-area: footer;
+    height: 100%;
+    width: 100%;
+}
+
+
+}
+
+
+
+/* MEDIA QUERIES - Pantalla Desktop */
+
+
+
+@media only screen and (min-width: 601px) {
+.bodyindexCaelum {
+background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/imagenfondo.jpg);
+ background-size: cover;
+    display: grid;
+grid-template-rows: 30vh 80vh 60vh 40vh;
+grid-template-columns: 100%;
+row-gap: 5vh;
+grid-template-areas: 
+"header"
+"main"
+"servicios"
+"footer"
+;
+}
+
+.header {
+    font-weight: bold;
+    display: flex;
+    height:30vh;
+    width: 100%;
+    padding: 5vh;
+    flex-wrap: nowrap;
+    grid-area: header;
+    margin-bottom: 10vh;
+}
+
+/* SECCIÓN PRINCIPAL */
+.seccionPrincipal {
+    margin-top: 5vh; 
+    grid-area: main;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/nuevoFondoHomeDesktop.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "viveLaExperiencia"
+    "disfruta"
+    "conoceMas";
+}
+
+.seccionPrincipal h2 {
+    grid-area: viveLaExperiencia;
+    justify-self: center;
+    align-self: center;
+    font-size: 3rem;
+    margin-top: 10vh;
+}
+
+.seccionPrincipal p {
+    grid-area: disfruta;
+    justify-self: center;
+    align-self: center;
+}
+
+.seccionPrincipal button {
+grid-area: conoceMas;
+width: 20vw;
+height: 10vh;
+justify-self: center;
+align-self: center;
+background-color: rgba(221, 205, 186, 0.801);
+transition: height 1s;
+}
+
+.seccionPrincipal button:hover {
+    height: 12vh;
+}
+
+.seccionPrincipal a {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+/* SERVICIOS DENTRO DE HOME */
+
+
+.nuestrosServicios {
+    grid-area: servicios;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 4fr;
+    grid-template-areas:
+    "tituloPrincipal tituloPrincipal tituloPrincipal tituloPrincipal"
+    "masajesHome limpiezaFacialHome saunaHome hidroterapiaHome";
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.nuestrosServicios .fondoServiciosHome {
+    grid-area: tituloPrincipal;
+    background-color: rgba(221, 205, 186, 0.801);
+    width: 100%;
+}
+
+.nuestrosServicios h3 {
+    font-size: medium;
+}
+
+.nuestrosServicios .divMasajes {
+    grid-area: masajesHome;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/masaje.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.nuestrosServicios .divMasajes:hover {
+    background-image: url(./MultimediaProy/masaje.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.nuestrosServicios .divMasajes:hover a {
+    color: white;
+}
+
+
+.nuestrosServicios .divLimpiezaFacial {
+    grid-area: limpiezaFacialHome;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/facialFondoCel.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.nuestrosServicios .divLimpiezaFacial:hover {
+    background-image: url(./MultimediaProy/facialFondoCel.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.nuestrosServicios .divLimpiezaFacial:hover a {
+    color: white;
+}
+
+.nuestrosServicios .divSauna {
+    grid-area: saunaHome;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/saunaHomeDesktop.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.nuestrosServicios .divSauna:hover {
+    background-image: url(./MultimediaProy/saunaHomeDesktop.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.nuestrosServicios .divSauna:hover a {
+    color:white;
+}
+
+.nuestrosServicios .divHidroterapia {
+    grid-area: hidroterapiaHome;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/hidroterapiaFondoCel.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.nuestrosServicios .divHidroterapia:hover {
+    background-image: url(./MultimediaProy/hidroterapiaFondoCel.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+.nuestrosServicios .divHidroterapia:hover a {
+color: white;
+}
+
+
+
+}
+
+/* TERMINA MEDIA QUERIES - DESKTOP */
+
+
+.header {
+    font-weight: bold;
+    display: flex;
+    height:40vh;
+    width: 100%;
+    padding: 5vh;
+    flex-wrap: nowrap;
+    grid-area: header;
+}
+
+
+
+/* MENU DE NAVEGACIÓN */
+
+.header .menuPrincipal ul {
+    display: flex;
+    text-align: center;
+    list-style-type: none;
+    margin-left: 20vh;
+    margin-top: 20vh;
+}
+
+
+.menuPrincipal li a {
+    color: black;
+    font-size: 1.2rem;
+    padding: 3vh;
+    margin: 3vh;
+}
+
+.menuPrincipal li a:hover {
+    background-color: rgba(221, 205, 186, 0.801);
+    color: black;
+}
+
+
+
+/* SECCIÓN DE SERVICIOS DENTRO DEL HOME*/
+
+.tituloPrincipal {
+    text-align: center;
+}
+
+
+.servicios {
+    font-weight: bold;
+}
+
+
+.nuestrosServicios a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.nuestrosServicios .tituloPrincipal {
+    grid-area: tituloPrincipal;
+}
+
+
+.nuestrosServicios div {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-items: center;
+    align-items:center;
+    padding: 5vh;
+
+}
+
+.nuestrosServicios h4 {
+    padding: 2vh;
+}
+
+.nuestrosServicios h3 {
+    transform: scale(2,2);
+}
+
+
+
+
+/* FOOTER*/
+
+footer {
+    margin-top: 20vh;
+    margin-right: 3vw;
+    margin-bottom: 5vh;
+    background-color: rgba(221, 205, 186, 0.801);
+    padding: 20px;
+    grid-area: footer;
+    height: 30vh;
+    width: 100%;
+}
+
+footer h4 {
+    margin-bottom: 1rem;
+}
+
+
+.footerGrid {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.footerGrid p {
+    display: inline-block;
+    text-align: center;
+}
+
+
+/* OTRO DOCUMENTO HTML: SECCIÓN NOSOTROS*/
+
+
+.bodyNosotros {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/imagenfondo.jpg);
+ background-size: cover;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "acercaDe"
+    "diferentes"
+    "footer"
+    ;
+    grid-template-rows: 40vh 70vh 50vh 50vh;
+    row-gap: 5vh;
+}
+
+
+
+.acercaDeContainer {
+    display: grid;
+    background-color: rgba(221, 205, 186, 0.801);
+    grid-template-columns: 50vw 30vw;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+    "tituloNosotros imagenNosotros"
+    "textoNosotros imagenNosotros";
+    grid-area: acercaDe;
+    padding: 5vh 5vw;
+    height: 70vh;
+    justify-items: stretch;
+    align-items: stretch;
+    column-gap: 5vw;
+    row-gap: 5vh;
+}
+
+.acercaDeContainer h2 {
+    grid-area: tituloNosotros;
+    margin-top: 5vh;
+}
+
+.acercaDeContainer p {
+    grid-area: textoNosotros;
+font-size: 1rem;
+}
+
+.acercaDeContainer img {
+    grid-area: imagenNosotros;
+
+
+}
+
+.diferentesContainer {
+    display: grid;
+    margin-left: 15vh;
+    margin-right: 15vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+    "tituloPrincipal tituloPrincipal tituloPrincipal tituloPrincipal"
+    "dif1 dif2 dif3 dif4"
+    ;
+    grid-area: diferentes;
+    column-gap: 5vw;
+    margin-bottom: 10vh;
+
+}
+
+.diferentesContainer h2 {
+    grid-area: tituloPrincipal;
+}
+
+.diferentesContainer #dif1 {
+    grid-area: dif1;
+}
+.diferentesContainer #dif2 {
+    grid-area: dif2;
+}
+.diferentesContainer #dif3 {
+    grid-area: dif3;
+}
+.diferentesContainer #dif4 {
+    grid-area: dif4;
+}
+
+.diferentesContainer .circulo {
+    background-color: rgba(250, 250, 210, 0.603);
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 3vh;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.diferentesContainer p {
+    text-align: center;
+}
+
+
+/* OTRO DOCUMENTO HTML: SECCIÓN SERVICIOS*/
+
+.serviciosGrid {
+    display: grid;
+    margin: 30px;
+    grid-template-rows: 20vh 50vh 50vh 50vh 50vh 40vh;
+    grid-template-columns: 90vw;
+    grid-template-areas: 
+    "titulo"
+    "masajes"
+    "limpiezaFacial"
+    "sauna"
+    "hidroterapia"
+    "reserva";
+}
+
+.tituloGrande {
+    grid-area: titulo;
+}
+
+.masajes {
+    grid-area: masajes;
+}
+
+.limpiezaFacial {
+    grid-area: limpiezaFacial;
+}
+
+.sauna {
+    grid-area: sauna;
+}
+
+.hidroterapia {
+    grid-area: hidroterapia;
+}
+
+.reservar {
+    grid-area: reserva;
+}
+
+
+/* OTRO DOCUMENTO HTML: SECCIÓN MEMBRESÍAS*/
+
+#membresias h1 {
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.tablestyle {
+    margin-left: 60px;
+    border-color: black;
+    border-style: solid;
+    padding: 40px;
+    background-color: lightcyan;
+    
+}
+
+#membresias th {
+    width: 200px;
+    height: 50px;
+    word-wrap: break-word;
+    
+}
+
+#membresias td {
+    width: 200px;
+    height: 50px;
+    word-wrap: break-word;
+    text-align: center;
+  
+}
+
+/* OTRO DOCUMENTO HTML: SECCIÓN CONTACTO*/
+
+.bodyContacto {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/backgroundContacto.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-rows: 40vh 100vh 50vh;
+    grid-template-areas: 
+    "header"
+    "formulario"
+    "footer"
+}
+
+.contacto {
+    display: grid;
+    grid-area: formulario;
+    grid-template-rows: 20vh 50vh 40vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "contactanos contactanos"
+    "camposFormulario mensajeFormulario"
+    "finalFormulario finalFormulario";
+    row-gap: 2vh;
+    column-gap: 10vw;
+    background-color: rgba(173, 163, 163, 0.438);
+    width: 100%;
+}
+
+.contacto h1 {
+    margin-left: 10vw;
+    margin-top: 5vh;
+    grid-area: contactanos;
+}
+
+.contacto .camposFormulario {
+    grid-area: camposFormulario;
+    font-size: 85%;
+    margin-left: 10vw;
+    font-weight: bold;
+}
+
+.contacto .mensajeFormulario {
+    grid-area: mensajeFormulario;
+    font-size: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mensajeFormulario input {
+    text-align: start;
+}
+
+.contacto .finalFormulario {
+    grid-area: finalFormulario;
+}
+
+.contacto .botonForm {
+    background-color: rgb(221, 205, 186);
+    padding: 1vh 1vw;
+    width: 10vw;
+    height: 8vh;
+
+}
+
+.contacto .botonesForm {
+    display: inline-block;
+    margin-top: 5vh;
+}
+
+.camposFormulario div {
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.camposFormulario  input {
+    width: 15vw;
+    height: 4vh;
+}
+
+.camposFormulario select {
+    height: 4vh;
+    margin-top: 2vh;
+}
+
+
+.mensajeFormulario input {
+width: 30vw;
+height: 40vh;
+font-size: 80%;
+}
+
+.mensajeFormulario label {
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+
+.mensajeFormulario p {
+    text-align: start;
+}
+
+.nombreApellidosFormulario input {
+    margin-left: 2vw;
+}
+.correoFormulario input {
+    margin-left: 3vw;
+}
+.telefonoFormulario input {
+    margin-left: 1.5vw;
+}
+
+.seleccionFormulario select {
+    margin-left: 10vw;
+}
+
+.finalFormulario {
+    display: flex;
+    flex-direction: column;
+    margin-left: 05vw;
+    text-align: center;
+}
+
