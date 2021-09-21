@@ -5,37 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-  <!-- LINKS CSS BOOTSTRAP Y PROPIO  -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">   
-  <link rel="stylesheet" href="./style.css">
-  <!-- LINK FUENTES -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <!-- FONT AWESOME (ICONOS) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Enlaces CSS /  BootStrap y Propio -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Enlaces Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
-<body>
-
+<body class="bodyContacto">
        <!-- MENU DE NAVEGACIÓN -->
 
-   <!-- HEADER Y NAVBAR -->
-   <header class="header">
+       <header class="header">
+        <div class="container-fluid">
+    <section class="menuPrincipal" role="navigation">
     <nav class="navbar navbar-expand-lg navbar-light">
        <div class="container-fluid">
            <a class="navbar-brand" href="./Nosotros.html">
-               <img class="img-fluid logoCaelum" src="./MultimediaProy/logowebsite3.png"  alt="logo">
-             </a>   
+               <img src="./MultimediaProy/logowebsite3.png" width="220" height="180" alt="logo">
+             </a>      
              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               Menu
                <span class="navbar-toggler-icon"></span>
              </button>
-    
+
+
          <div class="collapse navbar-collapse" id="navbarNav">
-           <ul class="navbar-nav ms-auto">
+           <ul class="navbar-nav">
              <li class="nav-item">
                <a class="nav-link" href="./index.html">INICIO </a>
              </li>
@@ -53,9 +49,11 @@
              </li>
            </ul>
          </div>
-      </div>
-    </nav>
-    </header>
+       </div>
+     </nav>
+   </section>
+</div>
+</header>
 
 
 <section class="contacto" id="contacto">
@@ -114,49 +112,32 @@
 </section>
 
 
->
-
-<!-- FOOTER -->
-
-<div class="mt-5 pt-5 pb-5 footerCaelum">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-5 col-xs-12 about-company">
-        <h2>Caelum</h2>
-        <p class="pr-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
-        <p><a href="#"><i class="fab fa-facebook-f me-2"></i></a><a href="#"><i class="fab fa-instagram"></i></a></p>
-      </div>
-      <div class="col-lg-3 col-xs-12 linksFooter">
-        <h4 class="mt-lg-0 mt-sm-3">Mapa de sitio</h4>
-          <ul class="mt-0 mb-2 me-0 ms-3 p-0">
-            <li> <a href="#">Inicio</a></li>
-            <li> <a href="#">Nosotros</a></li>
-            <li> <a href="#">Servicios</a></li>
-            <li> <a href="#">Membresías</a></li>
-            <li> <a href="#">Contacto</a></li>
-          </ul>
-      </div>
-      <div class="col-lg-4 col-xs-12 locationFooter">
-        <h4 class="mt-lg-0 mt-sm-4">Dirección</h4>
-        <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
-        <p class="mb-0"><i class="fa fa-phone mr-3"></i>(541) 754-3010</p>
-        <p><i class="fa fa-envelope-o mr-3"></i>info@hsdf.com</p>
-      </div>
+<footer>
+    <H4>CAELUM</H4>
+<section class="footerGrid">
+<section id="contactInfo">
+    <div id="dirección"> 
+        <img src="./MultimediaProy/addressIcon.png" alt="dirección" width="25px" height="30px">
+        <p>Dirección del SPA</p>
     </div>
-    <div class="row mt-5">
-      <div class="col copyright">
-        <p class=""><small>© 2021. All Rights Reserved.</small></p>
-      </div>
+    <div id="telefono">
+        <img src="./MultimediaProy/phoneIcon.png" alt="telefono" width="25px" height="30px">
+        <p>Telefono: 555-5555</p>
     </div>
-  </div>
-  </div>
+</section>
+<section id="redesSociales">
+    <div id="facebook">
+        <img src="./MultimediaProy/fbIcon.png" alt="facebook" width="30px" height="30px">
+        <p>Facebook</p>
+    </div>
+    <di id="instagram">
+        <img src="./MultimediaProy/instagramIcon.png" alt="instagram" width="25px" height="25px">
+        <p>Instagram</p>
+    </div>
+</section>
+</section>
+</footer>
 
-<!-- LINK AOS -->
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
-<!-- LINK JAVA BOOTSTRAP -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
