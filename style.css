@@ -19,9 +19,11 @@ header {
 }
 
 .logoCaelum {
-    width: 18vw;
-    height: 30vh;
+    width: 08vw;
+    height: 20vh;
 }
+
+
 
 /* SECCIÓN PRINCIPAL */
 .seccionPrincipal {
@@ -58,10 +60,10 @@ font-weight: bold;
 
 /* SECCIÓN SERVICIOS */
 
-.seccionServicios col {
+/* .seccionServicios col {
     width: 100%;
     height: 100%;
-}
+} */
 
 
 .seccionServicios .divMasajes {
