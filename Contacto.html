@@ -58,64 +58,98 @@
     </header>
 
 
-<section class="contacto" id="contacto">
-    <h1>CONTACTÁNOS</h1>
+<!-- PÁGINA DE CONTACTO -->
 
-    <section class="camposFormulario">
-    <form  id="formulario"  action="form.php" method="GET">
-        <fieldset >
-<div class="nombreApellidosFormulario">
-<label  for="nombreApellidos">Nombre y Apellidos</label>
-<input  type="text" id="nombreApellidos" required> 
-</div>
-
-<div class="correoFormulario">
-<label  for="email">Correo electrónico</label>
-<input  type="email" id="email" required> 
-</div>
-
-<div class="telefonoFormulario">
-<label  for="celular">Teléfono de contacto</label>
-<input  type="tel" id="celular" required> 
-</div>
-
-<div class="seleccionFormulario">
-    <p>Selecciona el servicio sobre el que deseas información</p>
-<select  name="Servicios" id="servicios" required>
-    <option value="Masajes">Masajes</option>
-    <option value="Faciales">Faciales</option>
-    <option value="Hidroterapia">Hidroterapia</option>
-    <option value="Tratamientos_Corporales">Tratamientos Corporales</option>
-</select>
-</div>
-
-</section>
-
-<div class="mensajeFormulario">
-<label  for="mensaje">Escribe tu mensaje</label>
-<input  type="text" id="mensaje" required> 
-</div>
+    <div class="container-fluid paginaContacto">
+      <div class="row">
 
 
-<div class="finalFormulario">
-<label >
-    <input type="checkbox" name="si_quiero" value="siquiero">
-    Deseo recibir información sobre descuentos y promociones
-</label>
-<div class="botonesForm">
-<input  class="botonForm" type="submit" value="Enviar formulario">
-<input  class="botonForm" type="reset" value="Limpiar formulario">
-</div>
-</div>
+  <div class="col-sm-12 col-md-12 col-lg-6 divPrincipalContacto" data-aos="fade-right" data-aos-duration=1000>
+    <div class="mt-5 ms-5 p-5">
+    <h1>CONTÁCTANOS</h1>
+    <p class="mt-5 d-none d-lg-block  d-md-block">Estamos felices de atenderte. Dejanos un mensaje y te contactaremos para brindarte más información sobre nuestros servicios y paquetes exclusivos.</p>
+  <p class="mt-5 d-none d-lg-block  d-md-block">Horario de atención:</p>
+  <p class="d-none d-lg-block  d-md-block">Lunes a Viernes: 09:00am - 07:00pm</p>
+  <p class="d-none d-lg-block  d-md-block">Sábado y Domingo: 10:00am - 04:00pm</p>
+  </div>
+  </div>
 
-</fieldset>
+  
+  <div class="col-sm-12 col-md-12 col-lg-6 p-5 divFormulario" data-aos="fade-up" data-aos-duration=1000>
+    <div class="mt-5">
+    <h3>Formulario de contacto</h3>
+    </div>
+
+
+    <form>
+
+      <div class="mb-3">
+        <label for="inputName" class="form-label">Nombre y Apellido</label>
+        <input type="name" class="form-control form-control-sm" id="inputName">
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 col-md-8 col-sm-12">
+      <div class="mb-3">
+        <label for="inputEmail" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control form-control-sm" id="inputName" aria-describedby="emailHelp">
+      </div>
+    </div>
+
+    <div class="col-lg-6 col-md-4 col-sm-12">
+      <div class="mb-3">
+        <label for="inputPhone" class="form-label">Teléfono</label>
+        <input type="phonenumber" class="form-control form-control-sm" id="inputPhone" aria-describedby="phoneHelp">
+      </div>
+    </div>
+
+  </div>
+
+
+
+      <div class="mb-3">
+       <label for="inputPhone" class="form-label">Selecciona el servicio o membresía sobre el que te gustaría saber más</label>
+      </div>
+
+      <div class="input-group mb-3">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Selecciona el concepto</button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Masajes</a></li>
+          <li><a class="dropdown-item" href="#">Limpieza Facial</a></li>
+          <li><a class="dropdown-item" href="#">Sauna</a></li>
+          <li><a class="dropdown-item" href="#">Hidroterapia</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Membresía Básica</a></li>
+          <li><a class="dropdown-item" href="#">Membresía VIP</a></li>
+          <li><a class="dropdown-item" href="#">Membresía Diamante</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#">Otro</a></li>
+        </ul>
+      </div>
+
+      <div class="mb-3">
+        <label for="inputMessage" class="form-label">Escribe tu mensaje</label>
+        <div class="input-group">
+          <textarea class="form-control" aria-label="With textarea" rows="5"></textarea>
+        </div>
+      </div>
+
+
+
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Deseo recibir información sobre descuentos y promociones</label>
+      </div>
+
+       <div class="text-center Enviar mb-5">
+      <button type="submit" class="btn">Enviar</button>
+    </div>
     </form>
-    
-</section>
+  </div>
 
-<!-- PROBANDO CALENDARIO -->
 
-<input size="16" type="text" class="form-control" id="datetime" readonly>
+</div>
+</div>
 
 
 
@@ -162,5 +196,7 @@
 </script>
 <!-- LINK JAVA BOOTSTRAP -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+
 </body>
 </html>
