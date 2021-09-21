@@ -42,8 +42,9 @@ header {
     transition: 350ms all;
 }
 
-.seccionPrincipal .btn:hover {
- transform: scale(1,2); /* No me agarra */
+
+.seccionPrincipal:hover a {
+font-weight: bold;
 }
 
 
@@ -144,11 +145,6 @@ header {
 .seccionServicios .divHidroterapia:hover a {
 color: white;
 }
-
-
-
-
-
 
 
 .seccionServicios .p-5 {
