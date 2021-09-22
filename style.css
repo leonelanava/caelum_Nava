@@ -213,8 +213,6 @@ color: white;
   /* PÁGINA DE CONTACTO */
 
 
-
-
 /* FORMULARIO */
 
 .paginaContacto {
@@ -233,3 +231,33 @@ color: white;
  .Enviar .btn {
     background-color: rgba(255, 255, 224, 0.808);
  }
+
+ /* PAGINA MEMBRESIA */
+
+
+.paginaMembresias {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/fondoPiscina.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ /* SECCION SUPERIOR */
+
+ .textoMembresia {
+     background-color: rgba(255, 255, 255, 0.733);
+ }
+
+ .tituloMembresias {
+     background-color: rgba(211, 211, 211, 0.425);
+ }
+
+  /* CATEGORIAS DE MEMBRESIAS */
+
+  .cardContactoMembresia .btn {
+    background-color: rgba(255, 255, 224, 0.808);
+}
+
+
+.cardContactoMembresia .card-body {
+    background-color:  rgba(211, 211, 211, 0.425);
+}
