@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/imagenfondo.jpg);
+    background-size: cover;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: rgba(255, 255, 224, 0.5);
+}
+
+.logoCaelum {
+    width: 08vw;
+    height: 20vh;
+}
+
+
+
+/* SECCIÓN PRINCIPAL */
+.seccionPrincipal {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/fondoFinalProyecto.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.textoSecPrincipal {
+    height: 100%;
+}
+
+.seccionPrincipal .btn {
+    background-color: rgba(255, 255, 224, 0.808);
+    transition: 350ms all;
+}
+
+
+.seccionPrincipal:hover a {
+font-weight: bold;
+}
+
+
+/* TITULOS QUE DIVIDEN SECCIONES DENTRO DEL HOME */
+
+.tituloDivision {
+    background-color: rgba(255, 255, 224, 0.808);
+    width: 100%;
+    height: 100%;
+}
+
+/* SECCIÓN SERVICIOS */
+
+.seccionServicios col {
+    width: 100%;
+    height: 100%;
+}
+
+
+.seccionServicios .divMasajes {
+    background-image:linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/masaje.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.seccionServicios .divLimpiezaFacial {
+    background-image:linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/facialFondoCel.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.seccionServicios .divSauna {
+    background-image:linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/saunaHomeDesktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+.seccionServicios .divHidroterapia {
+        background-image:linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/hidroterapiaFondoCel.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+.seccionServicios a {
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+}
+
+/* EFECTOS HOVER DENTRO DE IMAGENES DE SERVICIOS  */
+
+.seccionServicios .divMasajes:hover {
+    background-image: url(./MultimediaProy/masaje.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.seccionServicios .divMasajes:hover a {
+    color: white;
+}
+
+
+.seccionServicios .divLimpiezaFacial:hover {
+    background-image: url(./MultimediaProy/facialFondoCel.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+.seccionServicios .divLimpiezaFacial:hover a {
+    color: white;
+}
+
+
+.seccionServicios .divSauna:hover {
+    background-image: url(./MultimediaProy/saunaHomeDesktop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+.seccionServicios .divSauna:hover a {
+    color:white;
+}
+
+.seccionServicios .divHidroterapia:hover {
+    background-image: url(./MultimediaProy/hidroterapiaFondoCel.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.seccionServicios .divHidroterapia:hover a {
+color: white;
+}
+
+
+.seccionServicios .p-5 {
+    height: 100%;
+}
+
+/* SECCIÓN RESERVA */
+
+.seccionReserva .btn {
+    background-color: rgba(255, 255, 224, 0.808);
+}
+
+.seccionReserva .card  {
+    background-color: transparent;
+    border: none
+
+}
+
+.cardReservas {
+    background-color: rgba(255, 251, 200, 0.5);
+}
+
+
+
+/* FOOTER */
+
+.footerCaelum{
+  background-color: rgba(211, 211, 211, 0.39);
+  color:black;
+  }
+  
+
+ .linksFooter li a{
+      color: black;
+        text-decoration:none;
+    }
+  
+    .linksFooter li a:hover{
+        color: black;
+        transition: color .2s;
+        color: rgb(245, 197, 6);
+      }
+
+  .about-company i {
+      font-size: 25px;
+  }
+.about-company a { 
+      color: black
+}
+
+.about-company a:hover { 
+      transition: color .2s;
+      color:rgb(245, 197, 6);
+    }
+
+
+  .locationFooter i {
+    font-size: 18px;
+  }
+
+  .copyright p {border-top:1px solid rgba(255,255,255,.1);}
+
+
+  /* PÁGINA DE CONTACTO */
+
+
+/* FORMULARIO */
+
+.paginaContacto {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/fondoBañera.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.divFormulario {
+    background-color: rgba(211, 211, 211, 0.425)
+}
+
+
+
+ .Enviar .btn {
+    background-color: rgba(255, 255, 224, 0.808);
+ }
+
+ /* PAGINA MEMBRESIA */
+
+
+.paginaMembresias {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/fondoPiscina.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+ /* SECCION SUPERIOR */
+
+ .textoMembresia {
+     background-color: rgba(255, 255, 255, 0.733);
+ }
+
+ .tituloMembresias {
+     background-color: rgba(211, 211, 211, 0.425);
+ }
+
+  /* CATEGORIAS DE MEMBRESIAS */
+
+  .cardContactoMembresia .btn {
+    background-color: rgba(255, 255, 224, 0.808);
+}
+
+
+.cardContactoMembresia .card-body {
+    background-color:  rgba(211, 211, 211, 0.425);
+}
