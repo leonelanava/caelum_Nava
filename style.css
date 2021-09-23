@@ -60,11 +60,6 @@ font-weight: bold;
 
 /* SECCIÓN SERVICIOS */
 
-.seccionServicios col {
-    width: 100%;
-    height: 100%;
-}
-
 
 .seccionServicios .divMasajes {
     background-image:linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/masaje.jpg);
@@ -153,6 +148,21 @@ color: white;
     height: 100%;
 }
 
+/* SECCIÓN MEMBRESÍA */
+
+.categoriasMembresias {
+    background-image:linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/fondoPiscina.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+.categoriasMembresias .btn {
+    background-color:  rgba(255, 255, 224, 0.808);
+}
+
 /* SECCIÓN RESERVA */
 
 .seccionReserva .btn {
@@ -236,22 +246,44 @@ color: white;
 
 
 .paginaMembresias {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/fondoPiscina.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/fondotituloGrande.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
  /* SECCION SUPERIOR */
 
- .textoMembresia {
-     background-color: rgba(255, 255, 255, 0.733);
- }
 
  .tituloMembresias {
-     background-color: rgba(211, 211, 211, 0.425);
- }
+    background-color:rgba(211, 211, 211, 0.486)
+    }
+
 
   /* CATEGORIAS DE MEMBRESIAS */
+
+  .divBasica {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/imagenBasicaM.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .divVIP {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/saunaVIP.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .divDiamante {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/MembDiamante.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* CARD CONTACTO MEMBRESIA */
 
   .cardContactoMembresia .btn {
     background-color: rgba(255, 255, 224, 0.808);
@@ -260,4 +292,21 @@ color: white;
 
 .cardContactoMembresia .card-body {
     background-color:  rgba(211, 211, 211, 0.425);
+}
+
+/* PAGINA NOSOTROS */
+
+.seccionAcercaDe {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/fotoMujeresSpa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.fondo1Diferencias {
+    background-color: rgb(250, 237, 205);
+}
+
+.fondo2Diferencias {
+    background-color: rgb(254, 250, 224);
 }
