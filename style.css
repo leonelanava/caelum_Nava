@@ -181,10 +181,12 @@ color: white;
     background-repeat: no-repeat;
 }
 
-
-
 .categoriasMembresias .btn {
     background-color:  rgba(255, 255, 224, 0.808);
+}
+
+.divBasica {
+    align-items: center;
 }
 
 /* SECCIÓN RESERVA */
