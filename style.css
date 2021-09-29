@@ -20,7 +20,7 @@ header {
 
 .logoCaelum {
     width: 08vw;
-    height: 20vh;
+    height: 08vh;
 }
 
 
@@ -32,7 +32,10 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
 
 .textoSecPrincipal {
@@ -53,19 +56,30 @@ font-weight: bold;
 /* TITULOS QUE DIVIDEN SECCIONES DENTRO DEL HOME */
 
 .tituloDivision {
-    background-color: rgba(255, 255, 224, 0.808);
+    background-color: rgb(255, 255, 224);
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 /* SECCIÓN SERVICIOS */
 
+@media only screen and (min-width: 1000px) {
+    .rowServicios {
+      height: 40vh;
+      /* display: flex;
+      justify-items: center;
+      align-items: center; */
+    }
+  }
 
 .seccionServicios .divMasajes {
     background-image:linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/masaje.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .seccionServicios .divLimpiezaFacial {
@@ -73,21 +87,32 @@ font-weight: bold;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .seccionServicios .divSauna {
     background-image:linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/saunaHomeDesktop.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
 .seccionServicios .divHidroterapia {
         background-image:linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/hidroterapiaFondoCel.jpg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .seccionServicios a {
     text-decoration: none;
@@ -146,9 +171,6 @@ color: white;
 }
 
 
-.seccionServicios .p-5 {
-    height: 100%;
-}
 
 /* SECCIÓN MEMBRESÍA */
 
