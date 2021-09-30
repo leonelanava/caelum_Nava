@@ -1,0 +1,96 @@
+
+
+@import "_generales";
+
+/* SECCIÓN PRINCIPAL */
+.seccionPrincipal {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/fondoFinalProyecto.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    .textoSecPrincipal {
+        height: 100%;
+    }
+    .btn {
+        background-color: rgba(255, 255, 224, 0.808);
+        transition: 350ms all;
+    }
+    &:hover a {
+        font-weight: bold;
+    }
+}
+
+
+/* SECCIÓN SERVICIOS */
+
+@media only screen and (min-width: 1000px) {
+    .rowServicios {
+      height: 40vh;
+    }
+  }
+
+.seccionServicios {
+    @each $divServicios in Masajes, LimpiezaFacial, Sauna, Hidroterapia {
+        .div#{$divServicios} {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url('./MultimediaProy/#{divServicios}.jpg');
+       background-size: cover;
+       background-position: center;
+        background-repeat: no-repeat;
+         display: flex;
+             justify-content: center;
+             align-items: center; 
+            }
+      }
+a {
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+}
+ }
+ 
+
+/* EFECTOS HOVER DENTRO DE IMAGENES DE SERVICIOS  */
+
+
+
+/* SECCIÓN MEMBRESÍA */
+
+.categoriasMembresias {
+    background-image:linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/fondoPiscina.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .btn {
+        background-color:  rgba(255, 255, 224, 0.808);
+    }
+    .divBasica {
+        align-items: center;
+    }
+}
+
+
+
+
+
+/* PÁGINA DE CONTACTO */
+
+
+/* FORMULARIO */
+
+.paginaContacto {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/fondoBañera.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+      .divFormulario {
+        background-color: rgba(211, 211, 211, 0.425)
+      }
+      .Enviar .btn {
+        background-color: rgba(255, 255, 224, 0.808);
+     }
+}
+

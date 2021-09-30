@@ -66,9 +66,6 @@ font-weight: bold;
 @media only screen and (min-width: 1000px) {
     .rowServicios {
       height: 40vh;
-      /* display: flex;
-      justify-items: center;
-      align-items: center; */
     }
   }
 
@@ -251,6 +248,7 @@ color: white;
 
 /* FORMULARIO */
 
+
 .paginaContacto {
     background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/fondoBañera.jpg);
     background-size: cover;
@@ -336,3 +334,4 @@ color: white;
 .fondo2Diferencias {
     background-color: rgb(254, 250, 224);
 }
+
