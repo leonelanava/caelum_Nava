@@ -31,6 +31,45 @@ header .logoCaelum {
   height: auto;
 }
 
+.footerCaelum {
+  background-color: rgba(211, 211, 211, 0.39);
+  color: black;
+}
+
+.linksFooter li a {
+  color: black;
+  text-decoration: none;
+}
+
+.linksFooter:hover li a {
+  color: black;
+  -webkit-transition: color .2s;
+  transition: color .2s;
+  color: #f5c506;
+}
+
+.about-company i {
+  font-size: 25px;
+}
+
+.about-company a {
+  color: black;
+}
+
+.about-company:hover a {
+  -webkit-transition: color .2s;
+  transition: color .2s;
+  color: #f5c506;
+}
+
+.locationFooter i {
+  font-size: 18px;
+}
+
+.copyright p {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 /* SECCIÓN PRINCIPAL */
 .seccionPrincipal {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url(./MultimediaProy/fondoFinalProyecto.png);
@@ -72,7 +111,8 @@ header .logoCaelum {
 }
 
 .seccionServicios .divMasajes {
-  background-image: url("/MultimediaProy/divServicios.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url("./MultimediaProy/divServicios.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url("./MultimediaProy/divServicios.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -88,7 +128,8 @@ header .logoCaelum {
 }
 
 .seccionServicios .divLimpiezaFacial {
-  background-image: url("/MultimediaProy/divServicios.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url("./MultimediaProy/divServicios.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url("./MultimediaProy/divServicios.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -104,7 +145,8 @@ header .logoCaelum {
 }
 
 .seccionServicios .divSauna {
-  background-image: url("/MultimediaProy/divServicios.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url("./MultimediaProy/divServicios.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url("./MultimediaProy/divServicios.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -120,7 +162,8 @@ header .logoCaelum {
 }
 
 .seccionServicios .divHidroterapia {
-  background-image: url("/MultimediaProy/divServicios.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url("./MultimediaProy/divServicios.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url("./MultimediaProy/divServicios.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -135,21 +178,13 @@ header .logoCaelum {
           align-items: center;
 }
 
+.seccionServicios a {
+  text-decoration: none;
+  color: black;
+  font-size: x-large;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* EFECTOS HOVER DENTRO DE IMAGENES DE SERVICIOS  */
 /* SECCIÓN MEMBRESÍA */
 .categoriasMembresias {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url(./MultimediaProy/fondoPiscina.jpg);
@@ -169,6 +204,20 @@ header .logoCaelum {
           align-items: center;
 }
 
+/* SECCION DE RESERVA DENTRO DE INDEX */
+.seccionReserva .btn {
+  background-color: rgba(255, 255, 224, 0.808);
+}
+
+.seccionReserva .card {
+  background-color: transparent;
+  border: none;
+}
+
+.seccionReserva .cardReservas {
+  background-color: rgba(255, 251, 200, 0.5);
+}
+
 /* PÁGINA DE CONTACTO */
 /* FORMULARIO */
 .paginaContacto {
@@ -184,5 +233,67 @@ header .logoCaelum {
 
 .paginaContacto .Enviar .btn {
   background-color: rgba(255, 255, 224, 0.808);
+}
+
+/* PAGINA MEMBRESIAS */
+.paginaMembresias {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url(./MultimediaProy/fondotituloGrande.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/fondotituloGrande.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.paginaMembresias .tituloMembresias {
+  background-color: rgba(211, 211, 211, 0.486);
+}
+
+.paginaMembresias .divBasica {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url("./MultimediaProy/divMembresias.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url("./MultimediaProy/divMembresias.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.paginaMembresias .divVIP {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url("./MultimediaProy/divMembresias.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url("./MultimediaProy/divMembresias.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.paginaMembresias .divDiamante {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url("./MultimediaProy/divMembresias.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url("./MultimediaProy/divMembresias.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cardContactoMembresia .btn {
+  background-color: rgba(255, 255, 224, 0.808);
+}
+
+.cardContactoMembresia .card-body {
+  background-color: rgba(211, 211, 211, 0.425);
+}
+
+/* PÁGINA NOSOTROS  */
+.seccionAcercaDe {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url(./MultimediaProy/fotoMujeresSpa.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(./MultimediaProy/fotoMujeresSpa.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.fondo1Diferencias {
+  background-color: #faedcd;
+}
+
+.fondo2Diferencias {
+  background-color: #fefae0;
 }
 /*# sourceMappingURL=styles.css.map */
