@@ -35,10 +35,13 @@
     }
   }
 
+
+$divServicios: Masajes, LimpiezaFacial, Sauna, Hidroterapia;
+
 .seccionServicios {
     @each $divServicios in Masajes, LimpiezaFacial, Sauna, Hidroterapia {
         .div#{$divServicios} {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url('./MultimediaProy/#{divServicios}.jpg');
+        background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url('./MultimediaProy/#{$divServicios}.jpg');
        background-size: cover;
        background-position: center;
         background-repeat: no-repeat;
@@ -47,7 +50,7 @@
              align-items: center; 
             }
 
-            &:hover.div#{$divServicios} {
+         &:hover.div#{$divServicios} {
                 background-image:  url('./MultimediaProy/#{divServicios}.jpg');   }
 
       }
@@ -58,9 +61,6 @@ a {
 }
  }
  
-
-/* EFECTOS HOVER DENTRO DE IMAGENES DE SERVICIOS  */
-
 
 
 /* SECCIÓN MEMBRESÍA */
@@ -121,7 +121,7 @@ a {
 
 @each $divMembresias in Basica, VIP, Diamante {
     .div#{$divMembresias} {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url('./MultimediaProy/#{divMembresias}.jpg');
+        background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url('./MultimediaProy/#{$divMembresias}.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -143,6 +143,8 @@ a {
     background-color:  rgba(211, 211, 211, 0.425);
 }
 }
+
+
 
 
 /* PÁGINA NOSOTROS  */
