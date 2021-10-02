@@ -46,6 +46,10 @@
              justify-content: center;
              align-items: center; 
             }
+
+            &:hover.div#{$divServicios} {
+                background-image:  url('./MultimediaProy/#{divServicios}.jpg');   }
+
       }
 a {
     text-decoration: none;
