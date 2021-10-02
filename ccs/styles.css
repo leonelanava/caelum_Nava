@@ -128,7 +128,14 @@ header .logoCaelum {
 }
 
 .seccionServicios:hover.divMasajes {
-  background-image: url("./MultimediaProy/divServicios.jpg");
+  background-image: url("./MultimediaProy/Masajes.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.seccionServicios:hover.divMasajes a {
+  color: white;
 }
 
 .seccionServicios .divLimpiezaFacial {
@@ -149,7 +156,14 @@ header .logoCaelum {
 }
 
 .seccionServicios:hover.divLimpiezaFacial {
-  background-image: url("./MultimediaProy/divServicios.jpg");
+  background-image: url("./MultimediaProy/LimpiezaFacial.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.seccionServicios:hover.divLimpiezaFacial a {
+  color: white;
 }
 
 .seccionServicios .divSauna {
@@ -170,7 +184,14 @@ header .logoCaelum {
 }
 
 .seccionServicios:hover.divSauna {
-  background-image: url("./MultimediaProy/divServicios.jpg");
+  background-image: url("./MultimediaProy/Sauna.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.seccionServicios:hover.divSauna a {
+  color: white;
 }
 
 .seccionServicios .divHidroterapia {
@@ -191,7 +212,14 @@ header .logoCaelum {
 }
 
 .seccionServicios:hover.divHidroterapia {
-  background-image: url("./MultimediaProy/divServicios.jpg");
+  background-image: url("./MultimediaProy/Hidroterapia.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.seccionServicios:hover.divHidroterapia a {
+  color: white;
 }
 
 .seccionServicios a {
