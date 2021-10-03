@@ -173,3 +173,84 @@ a {
     background-color: rgb(254, 250, 224);
 }
 
+/* PÁGINA SERVICIOS */
+
+.divTextoServicios {
+    background-color: rgba(255, 255, 255, 0.726);
+}
+
+
+/* MASAJES */
+
+@media only screen and (min-width: 1000px) {
+    .rowMasajes {
+      height: 80vh;
+    }
+  }
+
+@each $divMasajesServicios in Relajante, Antiestres, Reductor  {
+    .div#{$divMasajesServicios} {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.473), rgba(255, 255, 255, 0.473)), url('../MultimediaProy/#{$divMasajesServicios}.jpg');
+   background-size: cover;
+   background-position: center;
+    background-repeat: no-repeat;     
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+        }
+
+     &:hover.div#{$divMasajesServicios} {
+            background-image:  url('../MultimediaProy/#{$divMasajesServicios}.jpg');   
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat
+  }
+
+  &:hover.div#{$divMasajesServicios} {
+    color:white }
+
+}
+
+/* LIMPIEZA FACIAL */
+
+@each $divLimpiezaFacialServicios in GoldenFacial, DeepTreatment {
+    .div#{$divLimpiezaFacialServicios} {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.300), rgba(255, 255, 255, 0.300)),url('../MultimediaProy/#{$divLimpiezaFacialServicios}.jpg');
+       background-size: cover;
+       background-position: center;
+        background-repeat: no-repeat;     
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        color: white;
+            }
+}
+
+/* SAUNA */
+
+@media only screen and (min-width: 1000px) {
+    .divServiciosSauna p {
+      margin-right: 30vw;
+    }
+  }
+
+  .divServiciosSauna {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.400), rgba(255, 255, 255, 0.400)), url(../MultimediaProy/SaunaServicios.jpg);
+      background-size: cover;
+      background-position: center;
+       background-repeat: no-repeat;
+    }
+
+    /* HIDROTERAPIA */
+
+    @each $divHidroterapiaServicios in Hidroterapia1, Hidroterapia2, Hidroterapia3 {
+        .div#{$divHidroterapiaServicios} {
+            background-image: linear-gradient(rgba(255, 255, 255, 0.300), rgba(255, 255, 255, 0.300)),url('../MultimediaProy/#{$divHidroterapiaServicios}.jpg');
+           background-size: cover;
+           background-position: center;
+            background-repeat: no-repeat;     
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+                }
+    }

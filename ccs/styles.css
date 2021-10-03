@@ -339,4 +339,204 @@ header .logoCaelum {
 .fondo2Diferencias {
   background-color: #fefae0;
 }
+
+/* PÁGINA SERVICIOS */
+.divTextoServicios {
+  background-color: rgba(255, 255, 255, 0.726);
+}
+
+/* MASAJES */
+@media only screen and (min-width: 1000px) {
+  .rowMasajes {
+    height: 80vh;
+  }
+}
+
+.divRelajante {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.473)), to(rgba(255, 255, 255, 0.473))), url("../MultimediaProy/Relajante.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.473), rgba(255, 255, 255, 0.473)), url("../MultimediaProy/Relajante.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+:hover.divRelajante {
+  background-image: url("../MultimediaProy/Relajante.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+:hover.divRelajante {
+  color: white;
+}
+
+.divAntiestres {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.473)), to(rgba(255, 255, 255, 0.473))), url("../MultimediaProy/Antiestres.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.473), rgba(255, 255, 255, 0.473)), url("../MultimediaProy/Antiestres.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+:hover.divAntiestres {
+  background-image: url("../MultimediaProy/Antiestres.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+:hover.divAntiestres {
+  color: white;
+}
+
+.divReductor {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.473)), to(rgba(255, 255, 255, 0.473))), url("../MultimediaProy/Reductor.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.473), rgba(255, 255, 255, 0.473)), url("../MultimediaProy/Reductor.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+:hover.divReductor {
+  background-image: url("../MultimediaProy/Reductor.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+:hover.divReductor {
+  color: white;
+}
+
+/* LIMPIEZA FACIAL */
+.divGoldenFacial {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), url("../MultimediaProy/GoldenFacial.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../MultimediaProy/GoldenFacial.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.divDeepTreatment {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), url("../MultimediaProy/DeepTreatment.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../MultimediaProy/DeepTreatment.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+/* SAUNA */
+@media only screen and (min-width: 1000px) {
+  .divServiciosSauna p {
+    margin-right: 30vw;
+  }
+}
+
+.divServiciosSauna {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url(../MultimediaProy/SaunaServicios.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../MultimediaProy/SaunaServicios.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* HIDROTERAPIA */
+.divHidroterapia1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), url("../MultimediaProy/Hidroterapia1.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../MultimediaProy/Hidroterapia1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.divHidroterapia2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), url("../MultimediaProy/Hidroterapia2.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../MultimediaProy/Hidroterapia2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.divHidroterapia3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), url("../MultimediaProy/Hidroterapia3.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../MultimediaProy/Hidroterapia3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=styles.css.map */
