@@ -243,14 +243,10 @@ a {
 
     /* HIDROTERAPIA */
 
-    @each $divHidroterapiaServicios in Hidroterapia1, Hidroterapia2, Hidroterapia3 {
-        .div#{$divHidroterapiaServicios} {
-            background-image: linear-gradient(rgba(255, 255, 255, 0.300), rgba(255, 255, 255, 0.300)),url('../MultimediaProy/#{$divHidroterapiaServicios}.jpg');
-           background-size: cover;
-           background-position: center;
-            background-repeat: no-repeat;     
-            display: flex;
-            justify-content: center;
-            align-items: center; 
-                }
-    }
+ .divHidroterapia2 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.400), rgba(255, 255, 255, 0.400)), url(../MultimediaProy/Hidroterapia2.jpg);
+    background-size: cover;
+    background-position: center;
+     background-repeat: no-repeat;
+     height: 60vh;
+ }
