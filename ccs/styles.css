@@ -261,6 +261,10 @@ header .logoCaelum {
   background-color: rgba(255, 251, 200, 0.5);
 }
 
+.seccionReserva .card-title {
+  font-size: large;
+}
+
 /* PÁGINA DE CONTACTO */
 /* FORMULARIO */
 .paginaContacto {
