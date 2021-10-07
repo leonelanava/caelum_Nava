@@ -7,10 +7,14 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(../MultimediaProy/imagenfondo.jpg);
-    background-size: cover;
 }
 
+/* FONDOS */
+
+.bodyFondo1 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(https://i.ibb.co/M9ch6mf/Fondo-Index.jpg);
+    background-size: cover;
+}
 /* HEADER */
 
 header {

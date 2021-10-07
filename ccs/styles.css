@@ -9,8 +9,12 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url(../MultimediaProy/imagenfondo.jpg);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(../MultimediaProy/imagenfondo.jpg);
+}
+
+/* FONDOS */
+.bodyFondo1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url(https://i.ibb.co/M9ch6mf/Fondo-Index.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(https://i.ibb.co/M9ch6mf/Fondo-Index.jpg);
   background-size: cover;
 }
 
@@ -72,8 +76,8 @@ header .logoCaelum {
 
 /* SECCIÓN PRINCIPAL */
 .seccionPrincipal {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url(../MultimediaProy/fondoFinalProyecto.png);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(../MultimediaProy/fondoFinalProyecto.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url(https://i.ibb.co/xsVxY84/fondo-Index.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(https://i.ibb.co/xsVxY84/fondo-Index.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -111,8 +115,8 @@ header .logoCaelum {
 }
 
 .divMasajes {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url("../MultimediaProy/Masajes.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url("../MultimediaProy/Masajes.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url("../Imagenes/Masajes.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url("../Imagenes/Masajes.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -128,7 +132,7 @@ header .logoCaelum {
 }
 
 :hover.divMasajes {
-  background-image: url("../MultimediaProy/Masajes.jpg");
+  background-image: url("../Imagenes/Masajes.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -139,8 +143,8 @@ header .logoCaelum {
 }
 
 .divLimpiezaFacial {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url("../MultimediaProy/LimpiezaFacial.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url("../MultimediaProy/LimpiezaFacial.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url("../Imagenes/LimpiezaFacial.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url("../Imagenes/LimpiezaFacial.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -156,7 +160,7 @@ header .logoCaelum {
 }
 
 :hover.divLimpiezaFacial {
-  background-image: url("../MultimediaProy/LimpiezaFacial.jpg");
+  background-image: url("../Imagenes/LimpiezaFacial.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -167,8 +171,8 @@ header .logoCaelum {
 }
 
 .divSauna {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url("../MultimediaProy/Sauna.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url("../MultimediaProy/Sauna.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url("../Imagenes/Sauna.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url("../Imagenes/Sauna.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -184,7 +188,7 @@ header .logoCaelum {
 }
 
 :hover.divSauna {
-  background-image: url("../MultimediaProy/Sauna.jpg");
+  background-image: url("../Imagenes/Sauna.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -195,8 +199,8 @@ header .logoCaelum {
 }
 
 .divHidroterapia {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url("../MultimediaProy/Hidroterapia.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url("../MultimediaProy/Hidroterapia.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url("../Imagenes/Hidroterapia.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url("../Imagenes/Hidroterapia.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -212,7 +216,7 @@ header .logoCaelum {
 }
 
 :hover.divHidroterapia {
-  background-image: url("../MultimediaProy/Hidroterapia.jpg");
+  background-image: url("../Imagenes/Hidroterapia.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -230,8 +234,8 @@ header .logoCaelum {
 
 /* SECCIÓN MEMBRESÍA */
 .categoriasMembresias {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url(../MultimediaProy/fondoPiscina.jpg);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(../MultimediaProy/fondoPiscina.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url(https://i.ibb.co/mhxjPdZ/Fondo-Seccion-Membresias.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(https://i.ibb.co/mhxjPdZ/Fondo-Seccion-Membresias.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -268,8 +272,8 @@ header .logoCaelum {
 /* PÁGINA DE CONTACTO */
 /* FORMULARIO */
 .paginaContacto {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url(../MultimediaProy/fondoBañera.jpg);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(../MultimediaProy/fondoBañera.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url(https://i.ibb.co/QQ9PSHM/Fondo-Contacto.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(https://i.ibb.co/QQ9PSHM/Fondo-Contacto.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -284,8 +288,8 @@ header .logoCaelum {
 
 /* PAGINA MEMBRESIAS */
 .paginaMembresias {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url(../MultimediaProy/fondotituloGrande.jpg);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(../MultimediaProy/fondotituloGrande.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url(https://i.ibb.co/bdFyJM3/Fondo-Membresias.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(https://i.ibb.co/bdFyJM3/Fondo-Membresias.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -329,8 +333,8 @@ header .logoCaelum {
 
 /* PÁGINA NOSOTROS  */
 .seccionAcercaDe {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url(../MultimediaProy/fotoMujeresSpa.jpg);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(../MultimediaProy/fotoMujeresSpa.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url(https://i.ibb.co/GFnp90P/Seccion-Acerca-De.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(https://i.ibb.co/GFnp90P/Seccion-Acerca-De.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

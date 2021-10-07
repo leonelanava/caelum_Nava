@@ -5,7 +5,7 @@
 
 /* SECCIÓN PRINCIPAL */
 .seccionPrincipal {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(../MultimediaProy/fondoFinalProyecto.png);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(https://i.ibb.co/xsVxY84/fondo-Index.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -37,7 +37,7 @@
 
     @each $divServicios in Masajes, LimpiezaFacial, Sauna, Hidroterapia {
         .div#{$divServicios} {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url('../MultimediaProy/#{$divServicios}.jpg');
+        background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url('../Imagenes/#{$divServicios}.jpg');
        background-size: cover;
        background-position: center;
         background-repeat: no-repeat;
@@ -47,7 +47,7 @@
             }
 
          &:hover.div#{$divServicios} {
-                background-image:  url('../MultimediaProy/#{$divServicios}.jpg');   
+                background-image:  url('../Imagenes/#{$divServicios}.jpg');   
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat
@@ -72,7 +72,7 @@ a {
 /* SECCIÓN MEMBRESÍA */
 
 .categoriasMembresias {
-    background-image:linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(../MultimediaProy/fondoPiscina.jpg);
+    background-image:linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(https://i.ibb.co/mhxjPdZ/Fondo-Seccion-Membresias.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -109,7 +109,7 @@ a {
 /* FORMULARIO */
 
 .paginaContacto {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(../MultimediaProy/fondoBañera.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(https://i.ibb.co/QQ9PSHM/Fondo-Contacto.jpg);
     background-size: cover;
     background-repeat: no-repeat;
       .divFormulario {
@@ -136,7 +136,7 @@ a {
         background-position: center;
     }
 }
-    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(../MultimediaProy/fondotituloGrande.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(https://i.ibb.co/bdFyJM3/Fondo-Membresias.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -162,7 +162,7 @@ a {
 /* PÁGINA NOSOTROS  */
 
 .seccionAcercaDe {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(../MultimediaProy/fotoMujeresSpa.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(https://i.ibb.co/GFnp90P/Seccion-Acerca-De.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center
