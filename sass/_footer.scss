@@ -1,8 +1,8 @@
 .footerCaelum{
     background-color: rgba(211, 211, 211, 0.39);
     color:black;
-    }
-  
+  }
+
  .linksFooter {
      li a{
         color: black;
@@ -11,9 +11,9 @@
       &:hover li a {
         color: black;
         transition: color .2s;
-        color: rgb(245, 197, 6);
-      }
+        color: rgb(116, 133, 138);
     }
+  }
 
     .about-company {
         i {
@@ -24,7 +24,7 @@
         }
         &:hover a {
             transition: color .2s;
-            color:rgb(245, 197, 6);
+            color: rgb(116, 133, 138);
         }
     }
 
@@ -37,3 +37,4 @@
       p {border-top:1px solid rgba(255,255,255,.1);}
 
     }
+  

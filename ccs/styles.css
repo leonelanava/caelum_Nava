@@ -11,16 +11,9 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* FONDOS */
-.bodyFondo1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url(https://i.ibb.co/M9ch6mf/Fondo-Index.jpg);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(https://i.ibb.co/M9ch6mf/Fondo-Index.jpg);
-  background-size: cover;
-}
-
 /* HEADER */
 header {
-  background-color: rgba(255, 255, 224, 0.5);
+  background-color: rgba(231, 245, 248, 0.658);
 }
 
 header .logoCaelum {
@@ -30,9 +23,26 @@ header .logoCaelum {
 
 /* TITULOS QUE DIVIDEN SECCIONES DENTRO DEL HOME */
 .tituloDivision {
-  background-color: lightyellow;
+  background-color: rgba(231, 245, 248, 0.658);
   width: 100%;
   height: auto;
+}
+
+/* CARD DE CONTACTO */
+.cardContacto .card-body {
+  background-color: rgba(211, 211, 211, 0.425);
+}
+
+/* ESTILO BOTON */
+.btn {
+  background-color: #74858a;
+  -webkit-transition: 350ms all;
+  transition: 350ms all;
+  color: white;
+}
+
+.btn:hover a {
+  font-weight: bold;
 }
 
 .footerCaelum {
@@ -49,7 +59,7 @@ header .logoCaelum {
   color: black;
   -webkit-transition: color .2s;
   transition: color .2s;
-  color: #f5c506;
+  color: #74858a;
 }
 
 .about-company i {
@@ -63,7 +73,7 @@ header .logoCaelum {
 .about-company:hover a {
   -webkit-transition: color .2s;
   transition: color .2s;
-  color: #f5c506;
+  color: #74858a;
 }
 
 .locationFooter i {
@@ -95,16 +105,6 @@ header .logoCaelum {
 
 .seccionPrincipal .textoSecPrincipal {
   height: 100%;
-}
-
-.seccionPrincipal .btn {
-  background-color: rgba(255, 255, 224, 0.808);
-  -webkit-transition: 350ms all;
-  transition: 350ms all;
-}
-
-.seccionPrincipal:hover a {
-  font-weight: bold;
 }
 
 /* SECCIÓN SERVICIOS */
@@ -241,32 +241,19 @@ header .logoCaelum {
   background-repeat: no-repeat;
 }
 
-.categoriasMembresias .btn {
-  background-color: rgba(255, 255, 224, 0.808);
-}
-
 .categoriasMembresias .divBasica {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-/* SECCION DE RESERVA DENTRO DE INDEX */
-.seccionReserva .btn {
-  background-color: rgba(255, 255, 224, 0.808);
-}
-
-.seccionReserva .card {
-  background-color: transparent;
-  border: none;
-}
-
-.seccionReserva .cardReservas {
-  background-color: rgba(255, 251, 200, 0.5);
-}
-
-.seccionReserva .card-title {
-  font-size: large;
+/* SECCIÓN CONTACTO */
+.seccionContacto {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url(//i.ibb.co/54F9MvT/Fondo-Contacto-Index.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(//i.ibb.co/54F9MvT/Fondo-Contacto-Index.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* PÁGINA DE CONTACTO */
@@ -282,14 +269,10 @@ header .logoCaelum {
   background-color: rgba(211, 211, 211, 0.425);
 }
 
-.paginaContacto .Enviar .btn {
-  background-color: rgba(255, 255, 224, 0.808);
-}
-
 /* PAGINA MEMBRESIAS */
 .paginaMembresias {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url(https://i.ibb.co/bdFyJM3/Fondo-Membresias.jpg);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(https://i.ibb.co/bdFyJM3/Fondo-Membresias.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url(https://i.ibb.co/vXCtwYq/Fondo-Membresias2.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(https://i.ibb.co/vXCtwYq/Fondo-Membresias2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -299,53 +282,13 @@ header .logoCaelum {
   background-color: rgba(211, 211, 211, 0.486);
 }
 
-.paginaMembresias .divBasica {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url("../MultimediaProy/Basica.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url("../MultimediaProy/Basica.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.paginaMembresias .divVIP {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url("../MultimediaProy/VIP.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url("../MultimediaProy/VIP.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.paginaMembresias .divDiamante {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url("../MultimediaProy/Diamante.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url("../MultimediaProy/Diamante.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.cardContactoMembresia .btn {
-  background-color: rgba(255, 255, 224, 0.808);
-}
-
-.cardContactoMembresia .card-body {
-  background-color: rgba(211, 211, 211, 0.425);
-}
-
 /* PÁGINA NOSOTROS  */
 .seccionAcercaDe {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url(https://i.ibb.co/GFnp90P/Seccion-Acerca-De.jpg);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(https://i.ibb.co/GFnp90P/Seccion-Acerca-De.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url(https://i.ibb.co/DwBLMgr/Fondo-Acerca-De2.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(https://i.ibb.co/DwBLMgr/Fondo-Acerca-De2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.fondo1Diferencias {
-  background-color: #faedcd;
-}
-
-.fondo2Diferencias {
-  background-color: #fefae0;
 }
 
 /* PÁGINA SERVICIOS */

@@ -9,16 +9,11 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* FONDOS */
 
-.bodyFondo1 {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(https://i.ibb.co/M9ch6mf/Fondo-Index.jpg);
-    background-size: cover;
-}
 /* HEADER */
 
 header {
-    background-color: rgba(255, 255, 224, 0.5);
+    background-color: rgba(231, 245, 248, 0.658);
     .logoCaelum {
         width: 08vw;
         height: 08vh;
@@ -28,7 +23,31 @@ header {
 /* TITULOS QUE DIVIDEN SECCIONES DENTRO DEL HOME */
 
 .tituloDivision {
-    background-color: rgb(255, 255, 224);
-    width: 100%;
+    background-color: rgba(231, 245, 248, 0.658);
+        width: 100%;
     height: auto;
 }
+
+
+/* CARD DE CONTACTO */
+
+.cardContacto { 
+     .card-body {
+        background-color:  rgba(211, 211, 211, 0.425);
+    }
+    }
+
+    /* ESTILO BOTON */
+
+    .btn {
+        background-color:rgb(116, 133, 138);
+        transition: 350ms all;
+        color: white;
+    }
+
+    .btn:hover a {
+        font-weight: bold;;
+    }
+
+
+    

@@ -17,13 +17,6 @@
     .textoSecPrincipal {
         height: 100%;
     }
-    .btn {
-        background-color: rgba(255, 255, 224, 0.808);
-        transition: 350ms all;
-    }
-    &:hover a {
-        font-weight: bold;
-    }
 }
 
 
@@ -76,31 +69,18 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    .btn {
-        background-color:  rgba(255, 255, 224, 0.808);
-    }
     .divBasica {
         align-items: center;
     }
 }
 
+/* SECCIÓN CONTACTO */
 
-/* SECCION DE RESERVA DENTRO DE INDEX */
-
-.seccionReserva {
-    .btn {
-        background-color: rgba(255, 255, 224, 0.808);
-    }
-    .card {
-        background-color: transparent;
-        border: none
-    }
-    .cardReservas {
-        background-color: rgba(255, 251, 200, 0.5);
-    }
-    .card-title {
-        font-size: large;
-    }
+.seccionContacto {
+    background-image:linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(//i.ibb.co/54F9MvT/Fondo-Contacto-Index.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
@@ -115,28 +95,16 @@ a {
       .divFormulario {
         background-color: rgba(211, 211, 211, 0.425)
       }
-      .Enviar .btn {
-        background-color: rgba(255, 255, 224, 0.808);
-     }
 }
 
 /* PAGINA MEMBRESIAS */
 
 .paginaMembresias {
-
+    
 .tituloMembresias {
     background-color:rgba(211, 211, 211, 0.486)
 }
-
-@each $divMembresias in Basica, VIP, Diamante {
-    .div#{$divMembresias} {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url('../MultimediaProy/#{$divMembresias}.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-}
-    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(https://i.ibb.co/bdFyJM3/Fondo-Membresias.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(https://i.ibb.co/vXCtwYq/Fondo-Membresias2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -145,36 +113,18 @@ a {
 
 
 
-.cardContactoMembresia { 
-
-.btn {
-    background-color: rgba(255, 255, 224, 0.808);
-}
-
- .card-body {
-    background-color:  rgba(211, 211, 211, 0.425);
-}
-}
-
-
-
 
 /* PÁGINA NOSOTROS  */
 
 .seccionAcercaDe {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(https://i.ibb.co/GFnp90P/Seccion-Acerca-De.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(https://i.ibb.co/DwBLMgr/Fondo-Acerca-De2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center
 }
 
-.fondo1Diferencias {
-    background-color: rgb(250, 237, 205);
-}
 
-.fondo2Diferencias {
-    background-color: rgb(254, 250, 224);
-}
+
 
 /* PÁGINA SERVICIOS */
 
