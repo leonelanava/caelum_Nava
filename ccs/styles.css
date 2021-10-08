@@ -45,6 +45,12 @@ header .logoCaelum {
   font-weight: bold;
 }
 
+/* TEXTOS EN SERVICIOS */
+.bloqueAzul {
+  background-color: #74858a;
+  color: white;
+}
+
 .footerCaelum {
   background-color: rgba(211, 211, 211, 0.39);
   color: black;
@@ -292,8 +298,12 @@ header .logoCaelum {
 }
 
 /* PÁGINA SERVICIOS */
-.divTextoServicios {
-  background-color: rgba(255, 255, 255, 0.726);
+.headerServicios {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.699)), to(rgba(255, 255, 255, 0.699))), url(https://i.ibb.co/7KkW2VT/Fondo-Servicios.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.699), rgba(255, 255, 255, 0.699)), url(https://i.ibb.co/7KkW2VT/Fondo-Servicios.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* MASAJES */
@@ -304,8 +314,8 @@ header .logoCaelum {
 }
 
 .divRelajante {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.473)), to(rgba(255, 255, 255, 0.473))), url("../MultimediaProy/Relajante.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.473), rgba(255, 255, 255, 0.473)), url("../MultimediaProy/Relajante.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.473)), to(rgba(255, 255, 255, 0.473))), url("../Imagenes/Relajante.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.473), rgba(255, 255, 255, 0.473)), url("../Imagenes/Relajante.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -321,7 +331,7 @@ header .logoCaelum {
 }
 
 :hover.divRelajante {
-  background-image: url("../MultimediaProy/Relajante.jpg");
+  background-image: url("../Imagenes/Relajante.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -332,8 +342,8 @@ header .logoCaelum {
 }
 
 .divAntiestres {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.473)), to(rgba(255, 255, 255, 0.473))), url("../MultimediaProy/Antiestres.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.473), rgba(255, 255, 255, 0.473)), url("../MultimediaProy/Antiestres.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.473)), to(rgba(255, 255, 255, 0.473))), url("../Imagenes/Antiestres.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.473), rgba(255, 255, 255, 0.473)), url("../Imagenes/Antiestres.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -349,7 +359,7 @@ header .logoCaelum {
 }
 
 :hover.divAntiestres {
-  background-image: url("../MultimediaProy/Antiestres.jpg");
+  background-image: url("../Imagenes/Antiestres.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -360,8 +370,8 @@ header .logoCaelum {
 }
 
 .divReductor {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.473)), to(rgba(255, 255, 255, 0.473))), url("../MultimediaProy/Reductor.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.473), rgba(255, 255, 255, 0.473)), url("../MultimediaProy/Reductor.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.473)), to(rgba(255, 255, 255, 0.473))), url("../Imagenes/Reductor.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.473), rgba(255, 255, 255, 0.473)), url("../Imagenes/Reductor.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -377,7 +387,7 @@ header .logoCaelum {
 }
 
 :hover.divReductor {
-  background-image: url("../MultimediaProy/Reductor.jpg");
+  background-image: url("../Imagenes/Reductor.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -388,52 +398,9 @@ header .logoCaelum {
 }
 
 /* LIMPIEZA FACIAL */
-.divGoldenFacial {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), url("../MultimediaProy/GoldenFacial.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../MultimediaProy/GoldenFacial.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-}
-
-.divDeepTreatment {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), url("../MultimediaProy/DeepTreatment.jpg");
-  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url("../MultimediaProy/DeepTreatment.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-}
-
-/* SAUNA */
-@media only screen and (min-width: 1000px) {
-  .divServiciosSauna p {
-    margin-right: 30vw;
-  }
-}
-
-.divServiciosSauna {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url(../MultimediaProy/SaunaServicios.jpg);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../MultimediaProy/SaunaServicios.jpg);
+.divLimpiezaFacialImagen {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url(https://i.ibb.co/zrp2yD2/Facial.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(https://i.ibb.co/zrp2yD2/Facial.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -441,8 +408,8 @@ header .logoCaelum {
 
 /* HIDROTERAPIA */
 .divHidroterapia2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url(../MultimediaProy/Hidroterapia2.jpg);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(../MultimediaProy/Hidroterapia2.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url(https://i.ibb.co/K9B1bVy/Fondo-Hidroterapia.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(https://i.ibb.co/K9B1bVy/Fondo-Hidroterapia.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
