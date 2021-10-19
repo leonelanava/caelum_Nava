@@ -397,19 +397,23 @@ header .logoCaelum {
 }
 
 /* SAUNA */
-.saunaImgServicios {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
-/* LIMPIEZA FACIAL */
-.divLimpiezaFacialImagen {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url(https://i.ibb.co/zrp2yD2/Facial.jpg);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(https://i.ibb.co/zrp2yD2/Facial.jpg);
+.divSaunaServicios1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url(https://i.ibb.co/8YsRL29/Sauna-Servicios.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(https://i.ibb.co/8YsRL29/Sauna-Servicios.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: 50vh;
+}
+
+/* LIMPIEZA FACIAL */
+.divLimpiezaFacialServ {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.4)), to(rgba(255, 255, 255, 0.4))), url(https://i.ibb.co/y0kkrzL/Facial.jpg);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(https://i.ibb.co/y0kkrzL/Facial.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 70vh;
 }
 
 /* HIDROTERAPIA */
@@ -419,5 +423,6 @@ header .logoCaelum {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  min-height: 70vh;
 }
 /*# sourceMappingURL=styles.css.map */

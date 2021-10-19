@@ -167,20 +167,23 @@ a {
 
 
 /* SAUNA */
-
-.saunaImgServicios {
-    height: fit-content;
-}
-
-/* LIMPIEZA FACIAL */
-
-.divLimpiezaFacialImagen {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.400), rgba(255, 255, 255, 0.400)), url(https://i.ibb.co/zrp2yD2/Facial.jpg);
+.divSaunaServicios1 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.400), rgba(255, 255, 255, 0.400)), url(https://i.ibb.co/8YsRL29/Sauna-Servicios.jpg);
     background-size: cover;
     background-position: center;
      background-repeat: no-repeat;
+     min-height: 50vh;
 }
 
+
+/* LIMPIEZA FACIAL */
+.divLimpiezaFacialServ {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.400), rgba(255, 255, 255, 0.400)), url(https://i.ibb.co/y0kkrzL/Facial.jpg);
+    background-size: cover;
+    background-position: center;
+     background-repeat: no-repeat;
+     min-height: 70vh;
+     }
 
     /* HIDROTERAPIA */
 
@@ -189,5 +192,8 @@ a {
     background-size: cover;
     background-position: center;
      background-repeat: no-repeat;
+     min-height: 70vh;
  }
+
+
 
